@@ -3,15 +3,16 @@ package com.example.atividades
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
-import com.example.atividades.databinding.ActivityMainBinding
+import com.example.atividades.databinding.ActivityCalculadoraBinding
 
-class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+
+class CalculadoraActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityCalculadoraBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityCalculadoraBinding.inflate(layoutInflater)
 
         binding.btTrocar.setOnClickListener {
             binding.txtHello.text = calcularComWhen()

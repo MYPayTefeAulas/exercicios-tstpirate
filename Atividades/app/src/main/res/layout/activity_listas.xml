@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#8A6276"
     tools:context=".ListasActivity">
 
     <EditText
-        android:id="@+id/txtEntrada"
+        android:id="@+id/txtEntradaListasAnalisar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
@@ -19,14 +20,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtSaida"
+        android:id="@+id/txtSaidaImprimir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtEntrada" />
+        app:layout_constraintTop_toBottomOf="@+id/txtEntradaListasAnalisar" />
 
     <Button
         android:id="@+id/btAnalisar"
@@ -36,5 +37,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtSaida" />
+        app:layout_constraintTop_toBottomOf="@+id/txtSaidaImprimir"
+        android:background="@drawable/botoeshome"
+        tools:text="Analisar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

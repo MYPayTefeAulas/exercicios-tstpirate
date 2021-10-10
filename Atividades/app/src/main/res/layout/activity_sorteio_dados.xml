@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8A6276"
+    tools:context=".SorteioDadosActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="SORTEIO DE DADOS"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNumLados1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="-"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/txtQntdLados1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtQntdLados1" />
+
+    <TextView
+        android:id="@+id/txtQntdLados1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="-"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/btTrocar1"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toEndOf="@+id/txtNumLados1"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/txtNumLados2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="-"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/txtQntdLados2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtQntdLados2" />
+
+    <TextView
+        android:id="@+id/txtQntdLados2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="-"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/btTrocar2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtNumLados2"
+        app:layout_constraintTop_toBottomOf="@+id/txtQntdLados1" />
+
+    <TextView
+        android:id="@+id/txtNumLados3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="-"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/txtQntdLados3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtQntdLados3" />
+
+    <TextView
+        android:id="@+id/txtQntdLados3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="-"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/btTrocar3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtNumLados3"
+        app:layout_constraintTop_toBottomOf="@+id/txtQntdLados2" />
+
+    <Button
+        android:id="@+id/btTrocar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text=">"
+        android:textColor="#000000"
+        android:background="@drawable/botoeshome"
+        app:layout_constraintBottom_toBottomOf="@+id/txtQntdLados1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtQntdLados1" />
+
+    <Button
+        android:id="@+id/btTrocar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text=">"
+        android:textColor="#000000"
+        android:background="@drawable/botoeshome"
+        app:layout_constraintBottom_toBottomOf="@+id/txtQntdLados2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtQntdLados2" />
+
+    <Button
+        android:id="@+id/btTrocar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text=">"
+        android:textColor="#000000"
+        android:background="@drawable/botoeshome"
+        app:layout_constraintBottom_toBottomOf="@+id/txtQntdLados3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtQntdLados3" />
+
+    <Button
+        android:id="@+id/btSortear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="Sortear"
+        android:textColor="#000000"
+        android:background="@drawable/botoeshome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQntdLados3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

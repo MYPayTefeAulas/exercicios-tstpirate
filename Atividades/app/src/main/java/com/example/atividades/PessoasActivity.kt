@@ -19,8 +19,8 @@ class PessoasActivity : AppCompatActivity() {
 
         binding = ActivityPessoasBinding.inflate(layoutInflater)
 
-        binding.btImprimir.setOnClickListener {
-            binding.txtSaida.text = imprimePessoa()
+        binding.btImprimirProximo.setOnClickListener {
+            binding.txtSaidaImprimir.text = imprimePessoa()
         }
 
         binding.btSalvar.setOnClickListener {
@@ -29,19 +29,25 @@ class PessoasActivity : AppCompatActivity() {
             idade = binding.txtIdade.toString().toInt()
             binding.txtIdade.text.clear()
 
-            val pessoa = Pessoa(nome,idade)
-            listaPessoas.add(pessoa)
+            val pessoa = Pessoa(nome, idade, telefone = null)
 
+// null  é uma constante que representa uma referência de objeto que não aponta para nenhum objeto
+
+            listaPessoas.add(pessoa)
         }
 
         setContentView(binding.root)
     }
 
     fun imprimePessoa(): String {
-        // caso finalise a lista, mostrar "FIM"
-        // novo botão : Do começo
+
+// caso finalise a lista, mostrar "FIM"
+// novo botão : Do começo
+
         if (indiceAtual >= listaPessoas.size)
             indiceAtual = 0
+
+//>= operador de comparação
 
         val pessoaAtual = listaPessoas[indiceAtual]
         indiceAtual++

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8A6276"
+    tools:context=".HomeActivity">
+
+    <TableLayout
+        android:layout_width="387dp"
+        android:layout_height="492dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65999997">
+
+        <TableRow
+            android:layout_width="360dp"
+            android:layout_height="180dp">
+
+            <Button
+                android:id="@+id/btAbrirListas"
+                android:layout_width="180dp"
+                android:layout_height="154dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/botoeshome"
+                android:text="Listas"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btAbrirGreeter"
+                android:layout_width="180dp"
+                android:layout_height="154dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/botoeshome"
+                android:text="Greeter" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="360dp"
+            android:layout_height="180dp">
+
+            <Button
+                android:id="@+id/btAbrirCalculadora"
+                android:layout_width="180dp"
+                android:layout_height="154dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/botoeshome"
+                android:text="Calculadora" />
+
+            <Button
+                android:id="@+id/btAbrirAgenda"
+                android:layout_width="180dp"
+                android:layout_height="154dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/botoeshome"
+                android:text="Agenda" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="360dp"
+            android:layout_height="180dp">
+
+            <Button
+                android:id="@+id/btAbrirRPG"
+                android:layout_width="180dp"
+                android:layout_height="154dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/botoeshome"
+                android:text="RPG" />
+
+            <Button
+                android:id="@+id/btAbrirSorteioDeDados"
+                android:layout_width="180dp"
+                android:layout_height="154dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/botoeshome"
+                android:text="Dados" />
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

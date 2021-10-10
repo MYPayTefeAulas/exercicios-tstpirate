@@ -10,25 +10,43 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Atividades">
         <activity
-            android:name=".GreeterActivity"
+            android:name=".calculadora.CalActivity"
+            android:exported="true" />
+        <activity
+            android:name=".rpg.RPG3Activity"
+            android:exported="true" />
+        <activity
+            android:name=".rpg.RPG2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".rpg.RPGActivity"
+            android:exported="true" />
+        <activity
+            android:name=".agenda.AgendaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HomeActivity"
             android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity
+            android:name=".greeter.GreeterActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".SorteioDadosActivity"
+            android:exported="true" />
+        <activity
+            android:name=".greeter.GreeterActivity"
+            android:exported="true" />
         <activity
             android:name=".PessoasActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".ListasActivity"
-            android:exported="true">
-
-        </activity>
-        <activity
-            android:name=".MainActivity"
             android:exported="true" />
     </application>
 

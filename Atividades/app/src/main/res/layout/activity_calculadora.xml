@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#8A6276"
+    tools:context=".HomeActivity">
 
     <TextView
         android:id="@+id/txtHello"
@@ -21,6 +22,7 @@
         android:layout_width="193dp"
         android:layout_height="43dp"
         android:layout_marginTop="40dp"
+        android:background="@drawable/botoeshome"
         android:text="Calcular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
