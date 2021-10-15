@@ -37,7 +37,7 @@
             android:name=".greeter.GreeterActivity2"
             android:exported="true" />
         <activity
-            android:name=".SorteioDadosActivity"
+            android:name=".dados.SorteioDadosActivity"
             android:exported="true" />
         <activity
             android:name=".greeter.GreeterActivity"

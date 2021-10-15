@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.atividades.agenda.AgendaActivity
 import com.example.atividades.calculadora.CalActivity
+import com.example.atividades.dados.SorteioDadosActivity
 import com.example.atividades.databinding.ActivityHomeBinding
 import com.example.atividades.greeter.GreeterActivity
 import com.example.atividades.rpg.RPGActivity
@@ -45,7 +46,7 @@ class HomeActivity : AppCompatActivity() {
         }
 
         binding.btAbrirSorteioDeDados.setOnClickListener {
-            val intent = Intent(this@HomeActivity,SorteioDadosActivity::class.java)
+            val intent = Intent(this@HomeActivity, SorteioDadosActivity::class.java)
             startActivity(intent)
 
         }

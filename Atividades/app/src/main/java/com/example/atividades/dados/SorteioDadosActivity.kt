@@ -1,4 +1,4 @@
-package com.example.atividades
+package com.example.atividades.dados
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

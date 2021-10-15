@@ -1,4 +1,6 @@
 package com.example.atividades.calculadora
 
-class Calculadora {
+class Calculadora (Operacao: String) {
+
 }
+
