@@ -24,17 +24,18 @@ class AgendaActivity : AppCompatActivity() {
             if ( pessoa.verificarTelefoneAgenda()){
                 binding.txtAviso.setTextColor(Color.rgb(216, 12, 12))
                 binding.txtAviso.text = "Erro, insira nome e número de telefone"
-            }
-            else if (pessoa.verificarTelefoneAgenda()){
-                binding.txtAviso.setTextColor(Color.rgb(216,12,12))
-                binding.txtAviso.text = "Contato vazio"
             }else {
                 if (!agenda.testeContato(pessoa)){
                     agenda.salvarContato(pessoa)
                     binding.txtAviso.setTextColor(Color.rgb(12,212,12))
                     binding.txtAviso.text = "Salvo"
                 }
+                else if (!pessoa.verificarTelefoneAgenda()){
+                    binding.txtAviso.setTextColor(Color.rgb(216,12,12))
+                    binding.txtAviso.text = "Contato repetido"
+                }
             }
+
             binding.txtNome.setText("")
             binding.txtNumero.setText("")
         }

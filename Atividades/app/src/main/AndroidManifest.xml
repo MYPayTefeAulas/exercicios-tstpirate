@@ -11,7 +11,10 @@
         android:theme="@style/Theme.Atividades">
         <activity
             android:name=".calculadora.CalActivity"
-            android:exported="true" />
+            android:exported="false" />
+        <activity
+            android:name=".calculadora.CalculadoraActivity"
+            android:exported="false" />
         <activity
             android:name=".rpg.RPG3Activity"
             android:exported="true" />
@@ -37,7 +40,7 @@
             android:name=".greeter.GreeterActivity2"
             android:exported="true" />
         <activity
-            android:name=".SorteioDadosActivity"
+            android:name=".dados.SorteioDadosActivity"
             android:exported="true" />
         <activity
             android:name=".greeter.GreeterActivity"

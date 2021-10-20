@@ -6,35 +6,21 @@ import com.example.atividades.databinding.ActivityCalBinding
 
 class CalActivity : AppCompatActivity() {
     private lateinit var binding: ActivityCalBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityCalBinding.inflate(layoutInflater)
 
-//Limpar tudo
+        var operacao: String = ""
+        var resultado: String = ""
 
         binding.btLimpar.setOnClickListener {
-
+            operacao = ""
+            resultado = ""
+//            binding.txtOperacao.text = ""
         }
 
-//Parenteses
-
-        binding.btParentese1.setOnClickListener {
-
-        }
-
-        binding.btParenteses2.setOnClickListener {
-
-        }
-
-//Operações
-
-        binding.btDividir.setOnClickListener {
-
-        }
-
-        binding.btExpoente.setOnClickListener {
+        binding.btPonto.setOnClickListener {
 
         }
 
@@ -42,78 +28,23 @@ class CalActivity : AppCompatActivity() {
 
         }
 
-        binding.btMultiplicar.setOnClickListener {
+        binding.btPorcento.setOnClickListener {
 
         }
 
-        binding.btSomar.setOnClickListener {
+        binding.btParentese.setOnClickListener {
 
         }
 
-        binding.btSubtrair.setOnClickListener {
+        binding.btExpoente.setOnClickListener {
 
         }
 
-//Ponto/Vírgula
-
-        binding.btPonto.setOnClickListener {
-
-        }
-
-// Números
-
-        binding.btUm.setOnClickListener {
-//            binding.txtEquacao.text = binding.txtEquacao.text.toString() + "1"
-//            if (operacao == "+" || )
-
-        }
-
-        binding.btDois.setOnClickListener {
-
-        }
-
-        binding.btTres.setOnClickListener {
-
-        }
-
-        binding.btQuatro.setOnClickListener {
-
-        }
-
-        binding.btCinco.setOnClickListener {
-
-        }
-
-        binding.btSeis.setOnClickListener {
-
-        }
-
-        binding.btSete.setOnClickListener {
-
-        }
-
-        binding.btOito.setOnClickListener {
-
-        }
-
-        binding.btNove.setOnClickListener {
-
-        }
-
-        binding.btZero.setOnClickListener {
-
-        }
-
-//Histórico
-        binding.btHistorico.setOnClickListener {
-
-        }
-
-//Backspace
-        binding.btBackspace.setOnClickListener {
+        binding.btDividir.setOnClickListener {
 
         }
 
         setContentView(binding.root)
     }
+
 }

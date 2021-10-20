@@ -21,9 +21,8 @@
     <string name="potência">^</string>
     <string name="ponto">.</string>
     <string name="igual">=</string>
-    <string name="parentese1">(</string>
-    <string name="parentese2">)</string>
-
+    <string name="parentese">()</string>
+    <string name="porcento">%</string>
 
     <string name="mostrar">entre com um número</string>
 

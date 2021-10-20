@@ -4,82 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DDC4D0"
+    android:background="#AF8E99"
     tools:context=".calculadora.CalActivity">
 
-    <EditText
-        android:id="@+id/txt_equacao"
-        android:layout_width="399dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_resultado" />
-
     <TableLayout
-        android:id="@+id/tableLayout2"
-        android:layout_width="405dp"
-        android:layout_height="361dp"
+        android:layout_width="389dp"
+        android:layout_height="376dp"
+        android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_equacao"
-        app:layout_constraintVertical_bias="0.63"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintTop_toBottomOf="@+id/txtOperacao"
+        app:layout_constraintVertical_bias="1.0">
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/bt_limpar"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/btLimpar"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@drawable/botaoclear"
-                android:text="@string/limpar"
-                android:textColor="#770909"
-                android:textSize="24sp" />
+                android:background="@drawable/botoescal"
+                android:text="@string/limpar" />
 
             <Button
-                android:id="@+id/bt_parentese1"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/btParentese"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@drawable/botoesoperacoes"
-                android:text="@string/parentese1"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:background="@drawable/botoescal"
+                android:text="@string/parentese" />
 
             <Button
-                android:id="@+id/bt_parenteses2"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/btPorcento"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@drawable/botoesoperacoes"
-                android:text="@string/parentese2"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:background="@drawable/botoescal"
+                android:text="@string/porcento" />
 
             <Button
-                android:id="@+id/bt_dividir"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/btDividir"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@drawable/botoesoperacoes"
-                android:text="@string/dividir"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:background="@drawable/botoescal"
+                android:text="@string/dividir" />
         </TableRow>
 
         <TableRow
@@ -87,52 +64,40 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/bt_sete"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/btSete"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/botoescal"
-                android:text="@string/sete"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:text="@string/sete" />
 
             <Button
-                android:id="@+id/bt_oito"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/btOito"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/botoescal"
-                android:text="@string/oito"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:text="@string/oito" />
 
             <Button
-                android:id="@+id/bt_nove"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/btNove"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/botoescal"
-                android:text="@string/nove"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:text="@string/nove" />
 
             <Button
-                android:id="@+id/bt_multiplicar"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/btProduto"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@drawable/botoesoperacoes"
-                android:text="@string/multiplicar"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:background="@drawable/botoescal"
+                android:text="@string/multiplicar" />
         </TableRow>
 
         <TableRow
@@ -140,52 +105,40 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/bt_quatro"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/btQuatro"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/botoescal"
-                android:text="@string/quatro"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:text="@string/quatro" />
 
             <Button
-                android:id="@+id/bt_cinco"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/btCinco"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/botoescal"
-                android:text="@string/cinco"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:text="@string/cinco" />
 
             <Button
-                android:id="@+id/bt_seis"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/btSeis"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/botoescal"
-                android:text="@string/seis"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:text="@string/seis" />
 
             <Button
-                android:id="@+id/bt_subtrair"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/btSub"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@drawable/botoesoperacoes"
-                android:text="@string/subtrair"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:background="@drawable/botoescal"
+                android:text="@string/subtrair" />
         </TableRow>
 
         <TableRow
@@ -193,53 +146,40 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/bt_um"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/btUm"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/botoescal"
-                android:text="@string/um"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:text="@string/um" />
 
             <Button
-                android:id="@+id/bt_dois"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/btDois"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/botoescal"
-                android:text="@string/dois"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:text="@string/dois" />
 
             <Button
-                android:id="@+id/bt_tres"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/btTres"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/botoescal"
-                android:text="@string/três"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:text="@string/três" />
 
             <Button
-                android:id="@+id/bt_somar"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/btSoma"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@drawable/botoesoperacoes"
-                android:text="@string/somar"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
-
+                android:background="@drawable/botoescal"
+                android:text="@string/somar" />
         </TableRow>
 
         <TableRow
@@ -247,86 +187,64 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/bt_expoente"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/btExpoente"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/botoescal"
-                android:text="@string/potência"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:text="@string/potência" />
 
             <Button
-                android:id="@+id/bt_igual"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/btZero"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/botoescal"
-                android:text="@string/zero"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:text="@string/zero" />
 
             <Button
-                android:id="@+id/bt_zero"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/btPonto"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/botoescal"
-                android:text="@string/ponto"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:text="@string/ponto" />
 
             <Button
-                android:id="@+id/bt_ponto"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                android:id="@+id/btIgual"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@drawable/botaoigual"
-                android:text="@string/igual"
-                android:textColor="#306A32"
-                android:textSize="24sp" />
+                android:background="@drawable/botoescal"
+                android:text="@string/igual" />
         </TableRow>
+
     </TableLayout>
 
-    <TextView
-        android:id="@+id/txt_resultado"
-        android:layout_width="399dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="16dp"
+    <EditText
+        android:id="@+id/txtOperacao"
+        android:layout_width="384dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultado" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="379dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btBackspace"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="4dp"
-        android:background="@android:drawable/ic_input_delete"
-        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_equacao"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/btHistorico"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:background="@android:drawable/ic_menu_recent_history"
-        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
-        app:layout_constraintEnd_toStartOf="@+id/btBackspace"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_equacao"
-        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

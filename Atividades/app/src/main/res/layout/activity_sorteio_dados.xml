@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#8A6276"
-    tools:context=".SorteioDadosActivity">
+    tools:context=".dados.SorteioDadosActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -95,9 +95,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
+        android:background="@drawable/botoeshome"
         android:text=">"
         android:textColor="#000000"
-        android:background="@drawable/botoeshome"
         app:layout_constraintBottom_toBottomOf="@+id/txtQntdLados1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/txtQntdLados1" />
@@ -107,9 +107,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
+        android:background="@drawable/botoeshome"
         android:text=">"
         android:textColor="#000000"
-        android:background="@drawable/botoeshome"
         app:layout_constraintBottom_toBottomOf="@+id/txtQntdLados2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/txtQntdLados2" />
@@ -119,9 +119,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
+        android:background="@drawable/botoeshome"
         android:text=">"
         android:textColor="#000000"
-        android:background="@drawable/botoeshome"
         app:layout_constraintBottom_toBottomOf="@+id/txtQntdLados3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/txtQntdLados3" />
@@ -131,9 +131,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
+        android:background="@drawable/botoeshome"
         android:text="Sortear"
         android:textColor="#000000"
-        android:background="@drawable/botoeshome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

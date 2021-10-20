@@ -1,4 +1,4 @@
-package com.example.atividades
+package com.example.atividades.dados
 
 class Dados (val numLados : Int){
 
