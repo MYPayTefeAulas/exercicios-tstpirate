@@ -8,6 +8,7 @@
     tools:context=".calculadora.CalActivity">
 
     <TableLayout
+        android:id="@+id/tableLayout3"
         android:layout_width="389dp"
         android:layout_height="376dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -56,6 +57,7 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/botoescal"
+                android:textColor="#480BB5"
                 android:text="@string/dividir" />
         </TableRow>
 
@@ -70,6 +72,7 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/botoescal"
+                android:textColor="#C8B508"
                 android:text="@string/sete" />
 
             <Button
@@ -79,6 +82,7 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/botoescal"
+                android:textColor="#C8B508"
                 android:text="@string/oito" />
 
             <Button
@@ -88,6 +92,7 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/botoescal"
+                android:textColor="#C8B508"
                 android:text="@string/nove" />
 
             <Button
@@ -97,6 +102,7 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/botoescal"
+                android:textColor="#480BB5"
                 android:text="@string/multiplicar" />
         </TableRow>
 
@@ -111,6 +117,7 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/botoescal"
+                android:textColor="#C8B508"
                 android:text="@string/quatro" />
 
             <Button
@@ -120,6 +127,7 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/botoescal"
+                android:textColor="#C8B508"
                 android:text="@string/cinco" />
 
             <Button
@@ -129,6 +137,7 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/botoescal"
+                android:textColor="#C8B508"
                 android:text="@string/seis" />
 
             <Button
@@ -138,6 +147,7 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/botoescal"
+                android:textColor="#480BB5"
                 android:text="@string/subtrair" />
         </TableRow>
 
@@ -152,6 +162,7 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/botoescal"
+                android:textColor="#C8B508"
                 android:text="@string/um" />
 
             <Button
@@ -161,6 +172,7 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/botoescal"
+                android:textColor="#C8B508"
                 android:text="@string/dois" />
 
             <Button
@@ -170,6 +182,7 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/botoescal"
+                android:textColor="#C8B508"
                 android:text="@string/três" />
 
             <Button
@@ -179,6 +192,7 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/botoescal"
+                android:textColor="#480BB5"
                 android:text="@string/somar" />
         </TableRow>
 
@@ -202,6 +216,7 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/botoescal"
+                android:textColor="#C8B508"
                 android:text="@string/zero" />
 
             <Button
@@ -230,7 +245,7 @@
         android:id="@+id/txtOperacao"
         android:layout_width="384dp"
         android:layout_height="54dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text=""
@@ -243,9 +258,26 @@
         android:id="@+id/txtResultado"
         android:layout_width="379dp"
         android:layout_height="52dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:text=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btBackspace"
+        android:layout_width="179dp"
+        android:layout_height="51dp"
+        android:layout_margin="5dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/botoescal"
+        android:text="Backspace"
+        android:textColor="#00BCD4"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout3"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/txtOperacao"
+        app:layout_constraintVertical_bias="1.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
