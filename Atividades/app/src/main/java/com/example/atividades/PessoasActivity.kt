@@ -31,8 +31,6 @@ class PessoasActivity : AppCompatActivity() {
 
             val pessoa = Pessoa(nome, idade, telefone = null)
 
-// null  é uma constante que representa uma referência de objeto que não aponta para nenhum objeto
-
             listaPessoas.add(pessoa)
         }
 
@@ -41,13 +39,9 @@ class PessoasActivity : AppCompatActivity() {
 
     fun imprimePessoa(): String {
 
-// caso finalise a lista, mostrar "FIM"
-// novo botão : Do começo
 
         if (indiceAtual >= listaPessoas.size)
             indiceAtual = 0
-
-//>= operador de comparação
 
         val pessoaAtual = listaPessoas[indiceAtual]
         indiceAtual++

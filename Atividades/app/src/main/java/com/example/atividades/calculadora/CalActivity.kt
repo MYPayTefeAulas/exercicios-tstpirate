@@ -6,6 +6,9 @@ import com.example.atividades.databinding.ActivityCalBinding
 
 class CalActivity : AppCompatActivity() {
     private lateinit var binding: ActivityCalBinding
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
